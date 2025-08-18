@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="message"></h1>
+    Email: <input id="email" type="email" name="email"> <br />
+    password: <input id="password" type="password" name="password">
+    <button onClick="register()">Register</button>
+    <button onClick="login()">Login</button> -->
+    <!-- <button onClick="taxCounter()">Click Me</button> -->
+     <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Roller</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .dice {
+      font-size: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dice" id="dice">🎲</div>
+  <h2 id="number">Roll the dice!</h2>
+  <button onclick="rollDice()">Roll Dice</button>
+
+  <script>
+    function rollDice() {
+      const diceFaces = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
+      const number = Math.floor(Math.random() * 6); // 0 to 5
+      document.getElementById("dice").textContent = diceFaces[number];
+      document.getElementById("number").textContent = "You rolled: " + (number + 1);
+    }
+  </script>
+
+</body>
+</html>
