@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="email" id="email">
+    <input type="password" id="password">
+    <button onClick="signIn()">sign in</button>
+    <script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDiQS8N7ktwcgvoLgCpIQXYIQREp7TteTk",
+            authDomain: "olx-project-9bea3.firebaseapp.com",
+            projectId: "olx-project-9bea3",
+            storageBucket: "olx-project-9bea3.firebasestorage.app",
+            messagingSenderId: "1037026156099",
+            appId: "1:1037026156099:web:bd03f61da6c739913ffef6",
+            measurementId: "G-GL8RLWJ8YZ"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
